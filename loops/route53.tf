@@ -6,4 +6,4 @@ resource "aws_route53_record" "roboshop_route" {
   ttl     = 1
   records = [aws_instance.roboshop[count.index].private_ip]
   allow_overwrite = true
-}
+} 
